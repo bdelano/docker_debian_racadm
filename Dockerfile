@@ -1,8 +1,6 @@
 FROM python:3.9-slim-bookworm
 
-RUN apt-get update
-RUN apt-get install -y bash openssl
-
+RUN apt-get update && apt-get install -y bash openssl
 
 COPY openssl.cnf /etc/ssl/openssl.cnf
 COPY idractools /idractools
