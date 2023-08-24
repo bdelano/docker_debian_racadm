@@ -12,6 +12,7 @@ The following Docker file and instructions were derived from this blog post: htt
 ### Please do the following on a debian system or within your favorite docker container
 * download the latest idrac tools from here: https://dl.dell.com/FOLDER05920767M/1/
 * untar the package e.g. `tar -zxvf DellEMC-iDRACTools-Web-LX-9.4.0-3732_A00.tar.gz`
+* install alien `apt install alien`
 * go here: `cd iDRACTools/racadm/RHEL8/x86_64`
 * type `alien *.rpm`
 * create a directory called idractools `mkdir idractools`
