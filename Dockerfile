@@ -1,9 +1,7 @@
 FROM python:3.9-slim-bookworm
 
-COPY idractools.tar.gz /
-
 RUN apt-get update
-RUN apt-get install -y bash openssl alien
+RUN apt-get install -y bash openssl
 
 
 COPY openssl.cnf /etc/ssl/openssl.cnf
